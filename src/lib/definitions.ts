@@ -10,5 +10,6 @@ export type CriteriaResponse = {
   name: string;
   ticker: string;
   price: number;
+  currency: string;
   criteria: CriteriaData[];
 };

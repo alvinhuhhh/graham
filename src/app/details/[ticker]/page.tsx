@@ -14,11 +14,13 @@ export default async function DetailsPage({
 
   let ticker = "";
   let price = "";
+  let currency = "";
   let name = "";
   let data = [] as CriteriaData[];
   if (response) {
     ticker = response.ticker;
     price = response.price.toString();
+    currency = response.currency;
     name = response.name;
     data = response.criteria;
   }
@@ -29,7 +31,9 @@ export default async function DetailsPage({
         <div className="flex flex-col px-8 py-4">
           <div className="flex flex-row justify-between">
             <H1>{ticker}</H1>
-            <H3>${price}</H3>
+            <H3>
+              {currency} {price}
+            </H3>
           </div>
           <div>
             <Muted>{name}</Muted>
