@@ -8,7 +8,7 @@ export default function Home() {
         <Title>Graham</Title>
         <Muted>Personal investment butler</Muted>
         <div className="w-full mt-8">
-          <SearchComponent />
+          <SearchComponent placeholder="Enter a ticker symbol" />
         </div>
       </div>
     </main>

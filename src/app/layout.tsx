@@ -9,7 +9,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Graham",
+  title: {
+    template: "%s | Graham",
+    default: "Graham",
+  },
   description: "Personal investment butler",
 };
 
