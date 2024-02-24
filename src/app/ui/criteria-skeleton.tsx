@@ -15,10 +15,7 @@ export default function CriteriaSkeleton() {
           <Skeleton className="h-8 w-32" />
         </CardTitle>
         <CardDescription>
-          <div className="flex flex-col gap-1">
-            <Skeleton className="h-3.5 w-64" />
-            <Skeleton className="h-3.5 w-32" />
-          </div>
+          <Skeleton className="h-3.5 w-64" />
         </CardDescription>
       </CardHeader>
       <CardContent>

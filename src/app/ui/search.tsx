@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { navigate } from "@/lib/actions";
+import { Search } from "lucide-react";
 
 export default function SearchComponent({
   placeholder,
@@ -13,7 +14,9 @@ export default function SearchComponent({
   return (
     <form className="flex flex-row gap-4" action={navigate}>
       <Input name="ticker" type="text" placeholder={placeholder} />
-      <Button>Search</Button>
+      <Button size="icon">
+        <Search />
+      </Button>
     </form>
   );
 }
