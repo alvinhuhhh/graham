@@ -7,6 +7,7 @@ export type CriteriaData = {
 };
 
 export type CriteriaResponse = {
+  name: string;
   ticker: string;
   price: number;
   criteria: CriteriaData[];
