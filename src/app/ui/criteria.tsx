@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Card,
   CardContent,
@@ -7,7 +5,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { P } from "@/components/ui/typography";
 import { CriteriaData } from "@/lib/definitions";
 
 export default function CriteriaCard({ data }: { data: CriteriaData }) {
@@ -33,10 +30,8 @@ export default function CriteriaCard({ data }: { data: CriteriaData }) {
           {data.description}
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <P className={style.value}>
-          {data.valueLabel}: {data.value}
-        </P>
+      <CardContent className={style.value}>
+        {data.valueLabel}: {data.value}
       </CardContent>
     </Card>
   );
